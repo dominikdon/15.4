@@ -1,14 +1,14 @@
 'use strict';
 (function () {
-function Phone(brand, price, color, system) {
-	this.brand = brand;
-	this.price = price;
-	this.color = color;
-  this.system = system;
-}
+	function Phone(brand, price, color, system) {
+		this.brand = brand;
+		this.price = price;
+		this.color = color;
+		this.system = system;
+	}
  
 Phone.prototype.printInfo = function() {
-		console.log("The phone brand is " + this.brand + ", color is " + this.color + ", system is " + this.system + " and the price is " + this.price + ".");
+	console.log("The phone brand is " + this.brand + ", color is " + this.color + ", system is " + this.system + " and the price is " + this.price + ".");
 }
   
 var iPhoneX = new Phone("Apple", 4000, "white", "iOS 11");
